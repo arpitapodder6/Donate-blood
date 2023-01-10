@@ -161,7 +161,6 @@
 			 }else{
 				$email = $_POST['email'];
 			 }
-	  
 	
 			  
 			}else{
@@ -212,42 +211,42 @@
 				<span aria-hidden="true">&times;</span>
 				</button>
 				</div>';
-        }
+
 			}
 
-}
-   	$sql = "SELECT * FROM donor WHERE id=".$_SESSION['user_id'];
+		}
 
-			$result = mysqli_query($connection,$sql) ;
+	}
+	$sql = "SELECT * FROM donor WHERE id=".$_SESSION['user_id'];
 
-			if(mysqli_num_rows($result)>0){
-                  while($row = mysqli_fetch_assoc($result)){
-					$userID= $row['id'];
-                  	$name = $row['name'];
-                  	$blood_group = $row['blood_group'];
-                  	$gender = $row['gender'];
-                  	$email=$row['email'];
-                  	$contact_no = $row['contact_no'];
-                  	$city = $row['city'];
+	$result = mysqli_query($connection,$sql) ;
 
-                  	$dob = $row['dob'];
-                  	$date = explode("-", $dob);
+	if(mysqli_num_rows($result)>0){
+		  while($row = mysqli_fetch_assoc($result)){
+			$userID= $row['id'];
+			  $name = $row['name'];
+			  $blood_group = $row['blood_group'];
+			  $gender = $row['gender'];
+			  $email=$row['email'];
+			  $contact_no = $row['contact_no'];
+			  $city = $row['city'];
 
-					$dbPassword = $row['password'];
-                  }
-			}
-		  
-   
+			  $dob = $row['dob'];
+			  $date = explode("-", $dob);
+
+			$dbPassword = $row['password'];
+		  }
+	}
    if(isset($_POST['update_pass'])){
 		
 	if(isset($_POST['old_password']) && !empty($_POST['old_password']) && isset($_POST['c_password']) && !empty($_POST['c_password'])  && isset($_POST['new_password']) && !empty($_POST['new_password'])){
 
-		$oldpassword = ($_POST['old_password']);
+		$oldpassword = $_POST['old_password'];
 
-		if($oldpassword == $password){
+		if($oldpassword == $dbPassword){
 
 			if(strlen($_POST['new_password'])>=6){
-				if($_POST['new_password'] == ($_POST['c_password'])){
+				if($_POST['new_password'] == $_POST['c_password']){
 				  $password = $_POST['new_password'];
 				}else{
 					$passwordError = ' <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -287,7 +286,7 @@
 	  }
 
 	  if(isset($password)){
-		$sql = "UPDATE donor SET password='$password' WHERE id='.$userID'";
+		$sql = "UPDATE donor SET passwordError='$password' WHERE id='$userID'";
 			if(mysqli_query($connection,$sql)){
 				$updatePasswordSuccess = ' <div class="alert alert-success alert-dismissible fade show" role="alert">
 				<strong>Password updated successfully.</strong>
@@ -320,7 +319,8 @@
 
 
    }
-     if(isset($_POST['delete_account'])){
+
+   	if(isset($_POST['delete_account'])){
 		 
 		if(isset($_POST['account_password']) && !empty($_POST['account_password'])){
 			$account_password = $_POST['account_password'];
@@ -390,8 +390,6 @@
 
 		
 	}
-
-
      include 'include/sidebar.php';
 
 ?>
@@ -411,16 +409,16 @@
 </style>
 			<div class="container" style="padding: 60px 0;">
 			<div class="row">
-				
+			
 				<div class=" card col-md-6 offset-md-3">
 					<div class="panel panel-default" style="padding: 20px;">
 					
-					<!-- Error Messages -->	
-          <?php
-           if(isset($showForm)) echo $showForm;
-	       if (isset($deletesubmitError))
-		       echo $deletesubmitError;
-           if(isset($updateError)) echo $updateError;
+				<!-- Error Messages -->	
+          <?php 
+		   if(isset($showForm)) echo $showForm;
+	if (isset($deletesubmitError))
+		echo $deletesubmitError;
+		  if(isset($updateError)) echo $updateError;
 		  if(isset($updateSuccess)) echo $updateSuccess;
 		  
 		 
@@ -490,7 +488,7 @@
 					<div class="form-group">
               <label for="city">City</label>
               <select name="city" id="city" class="form-control demo-default" required>
-	<option value="">-- Select --</option>
+<option value="">-- Select --</option>
 	<?php if(isset($city)) echo '<option selected="" value="'.$city.'">'.$city.'</option>';?>
     <optgroup title="Alipurduar" label="&raquo;Alipurduar"></optgroup>
 	<option value="Alipurduar">Alipurduar</option><option value="Alipurduar Railway Station" >Alipurduar Railway Station</option>
@@ -522,6 +520,8 @@
 	<option value="Agarpara" >Agarpara</option><option value="Anarbaria" >Anarbaria</option><option value="Ariadaha" >Ariadaha</option><option value="Babanpur" >Babanpur</option><option value="Baduria" >Baduria</option><option value="Baguiati" >Baguiati</option><option value="Balibhara" >Balibhara</option><option value="Balihati" >Balihati</option><option value="Bongaon" >Bongaon</option><option value="Baranagar" >Baranagar</option><option value="Barasat" >Barasat</option><option value="Barrackpore" >Barrackpore</option><option value="Basirhat" >Basirhat</option><option value="Belghoria" >Belghoria</option><option value="Bhatpara" >Bhatpara</option><option value="Bidhannagar" >Bidhannagar</option><option value="Bijpur, North 24 Parganas " >Bijpur, NOrth 24 Parganas</option><option value="Birati" >Birati</option><option value="Bishnupur, North 24 Parganas" >Bishnupur, North 24 Parganas</option><option value="Chak Barbaria" >Chak Barbaria</option><option value="Chandpara" >Chandpara</option><option value="Chandpur, Ghola" >Chnadpur, Ghola</option><option value="Chhekati" >Chhekati</option>
 	<option value="Dakshineswar" >Dakshineswar</option><option value="Dandirhat" >Dandirhat</option><option value="Deara" >Deara</option><option value="Deora, North 24 Parganas" >Deora, North 24 Parganas</option><option value="Deulia" >Deulia</option><option value="Dhakuria, North 24 Parganas" >Dhakuria, North 24 Parganas</option><option value="Digha, NOrth 24 Parganas" >Digha, North 24 Parganas</option><option value="Dum Dum" >Dum Dum</option><option value="Dum Dum Park" >Dum Dum Park</option><option value="Dunlop, Kolkata" >Dunlop, Kolkata</option><option value="Durganar, Kolkata" >Durganar, Kolkata</option><option value="Duttapukur" >Duttapukur</option><option value="Gangapur, North 24 Parganas" >Gangapur, North 24 Parganas</option><option value="Gobardanga">Gobardanga</option><option value="Guma">Guma</option><option value="Habra" >Habra</option><option value="Halisahar" >Halisahar</option><option value="Ichapore" >Ichapore</option><option value="Jagatdal" >Jagatdal</option><option value="Kanchrapara" >Kanchrapara</option><option value="Kestopur" >Kestopur</option><option value="Lake Town, Kolkata" >Lake Town, Kolkata</option><option value="Madhyamgram" >Madhyamgram</option><option value="Maslandapur" >Maslandapuro</option><option value="Nagerbazar" >Nagarbazar</option><option value="Naihati" >Naihati</option><option value="New Town" >New Town</option><option value="Palta" >Palta</option>
 	<optgroup title="SOUTH 24 PARGANAS" label="&raquo; SOUTH 24 PARGANAS"></optgroup><option value="Bantala" >Bantala</option><option value="Baruipur" >Baruipur</option><option value="Canning" >Canning</option><option value="Diamond Harbour" >Diamond Harbour</option><option value="Park Circus" >Park Circus</option><option value="Park Street" >Park Street</option><option value="Sonarpur" >Sonarpur</option></select>
+
+
 
 					<?php if(isset($cityError)) echo $cityError; ?>
 				</div><!--city end-->
@@ -557,6 +557,9 @@
 							</div>
                   </form>
 			</div>
+
+			<?php if(isset($deleteAccountError)) echo $deleteAccountError; 
+			 ?>
 
 			<div class="form-group">
 							<label for="oldpassword">Password</label>

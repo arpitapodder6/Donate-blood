@@ -87,9 +87,7 @@
 						<h1 class="text-center"  style="color: white; font-weight: 700;padding: 10px 0 0 0;">Donate Blood</h1>
 						<hr class="white-bar">
 						<p class="text-center pera-text">
-							We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
-
-							We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+						The main aim of our project is to save lives of people by providing blood. A Blood donation search website  is developed so that users can view the information of nearby Donors. Our project is developed on two perspective i.e. patient and donor.
 						</p>
 						<a href="#" class="btn btn-default btn-lg text-center center-aligned">Become a Life Saver!</a>
 					</div>
@@ -103,9 +101,9 @@
     				<div class="col">
     					<div class="card">
      						<h3 class="text-center red">Our Vission</h3>
-								<img src="img/vision.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
+								<img src="img/vision.png" alt="Our Vision" class="img img-responsive" width="168" height="168">
 								<p class="text-center">
-									We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+								The main motive of collecting blood is to supply patients who need blood for surgery or for treatment of any disease. Mobile blood bank is a mobile based project . Mobile is a portable device, so it can move easily from one place to another place easily. Hence it is the best choice for communication .
 								</p>
 						</div>
     				</div>
@@ -113,9 +111,9 @@
     				<div class="col">
     					<div class="card">
       							<h3 class="text-center red">Our Goal</h3>
-								<img src="img/target.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
+								<img src="img/target.png" alt="Our Goal" class="img img-responsive" width="168" height="168">
 								<p class="text-center">
-									We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+								To wipe off the scarcity of blood and ensure availability of safe and quality blood and other blood components, round the clock and throughout the year. This will lead to alleviation of human sufferings, even to the far-flung remote areas in the country.
 								</p>
 						</div>
     				</div>
@@ -123,9 +121,9 @@
     				<div class="col">
     					<div class="card">
       						<h3 class="text-center red">Our Mission</h3>
-								<img src="img/goal.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
+								<img src="img/goal.png" alt="Our mission" class="img img-responsive" width="168" height="168">
 								<p class="text-center">
-									We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+								In the event of an emergency, our application assists in keeping track of all recent information pertaining to the individuals who have donated blood. It will contain all of the donor's information, including name, address, phone number, blood type, and so on. The blood groups that are accessible at neighbouring blood banks may be accessed by individuals who require them.
 								</p>
 							</div>
    			 		</div>
