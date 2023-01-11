@@ -6,15 +6,15 @@
 						<hr class="white-bar">
 
 							<h1 class="text-center">
-								<a  target="_blank" href="https://www.facebook.com/exceptionalprogrammers"><i style="color: #fff;" class="fab fa-facebook-square"></i></a>
+								<a  target="_blank" href="https://www.facebook.com/profile.php?id=100088231096268"><i style="color: #fff;" class="fab fa-facebook-square"></i></a>
 
-								<a target="_blank" href="https://www.youtube.com/exceptionalprogrammers"><i style="color: #fff;" class="fab fa-youtube-square"></i></a> 
+								<a target="_blank" href="https://www.twitter.com/wires_for_veins"><i style="color: #fff;" class="fab fa-twitter-square"></i></a> 
+
+								<a target="_blank" href="mailto:wiresforveins06@gmail.com"><i style="color: #fff;" class="fab fa fa-envelope"></i></a> 
+							
 							</h1>
 
-							<div class="details">
-								 <p> 92 300 1234567 <i class="fa fa-phone"></i>
-								exceptional@gmail.com <i class="fa fa-envelope"></i>  </p>
-							</div>
+							
 
 					</div>
 				</div>
