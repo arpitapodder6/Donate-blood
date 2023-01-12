@@ -79,7 +79,7 @@
 				<div class="col-md-12 col-md-push-1">
 					<div class="panel panel-default" style="padding: 20px;">
 						<div class="panel-body">
-							 <?php if(isset($submitError)) echo $submitError?>;
+							 <?php if(isset($submitError)) echo $submitError?>
 							
 								<div class="alert alert-danger alert-dismissable" style="font-size: 18px; display: none;">
     						
