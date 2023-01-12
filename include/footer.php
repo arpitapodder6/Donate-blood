@@ -11,10 +11,10 @@
 								<a target="_blank" href="https://www.twitter.com/wires_for_veins"><i style="color: #fff;" class="fab fa-twitter-square"></i></a> 
 
 								<a target="_blank" href="mailto:wiresforveins06@gmail.com"><i style="color: #fff;" class="fab fa fa-envelope"></i></a> 
-							
+							    
 							</h1>
 
-							
+							<p class="text-center">@copyright 2023 wiresforveins</p>
 
 					</div>
 				</div>
