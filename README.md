@@ -1,5 +1,5 @@
 # Donate-blood
- It is repositery of a blood donation website which we (**Weiresforveins) built.
+ It is repositery of a blood donation website which we (**Weiresforveins**) built.
 
 ## set up
 1. Download Xampp : https://www.apachefriends.org/download.html
